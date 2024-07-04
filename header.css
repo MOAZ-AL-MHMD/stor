@@ -1,0 +1,89 @@
+header {
+    /* ===========
+    header right
+     =============== */
+  justify-content: space-between;
+  padding-inline: 10%;
+  padding-top: 1.2rem;
+
+  & .too {
+    margin-inline: 33px;
+  }
+  & .too,
+  .thry {
+    border: #333 solid 2px;
+    padding: 7px 12px;
+   
+    border-radius: 50px;
+    font-weight: 200;
+  }
+  & .too:hover,
+  .thry:hover {
+    background-color: #222222;
+    color: #00ff;
+  }
+  & .too:hover .fa-solid,
+  .thry:hover .fa-solid
+  {
+color: blue;
+  }
+.one{
+    background-color: #222222;
+    padding: 7px 12px;
+    border-radius: 50px;
+color: aqua;
+}
+.one .fa-solid{
+    color: aqua;
+}
+.one{
+    position: relative;
+}
+.too-up{
+    position: absolute;
+    top: -7px;
+    right: 0;
+    background-color: red;
+    color: aliceblue;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===========
+  header left
+   ==========  */
+
+.header-left{
+& .left-up{
+font-weight: 900;
+}
+& .fa-solid{
+    font-size: 20px;
+    width: 23px;
+}
+& #don{
+    font-size: 14px;
+}
+}
+}
+@media (width < 600px){
+.header-left{
+    display: none;
+}
+.header-right{
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+  margin-left: 65px;
+    gap: 1rem;
+width: 200px;
+}
+
+}
+
+
+
